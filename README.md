@@ -17,16 +17,14 @@ Repo for openstack lab
 
 This lab requires two virtual boxes, a vbox acting as a router and the openstack allinone server.
 
-Note for Windows users: In Windows, VBoxManage.exe is not in the %PATH%. 
+Note for Windows users: In Windows, VBoxManage.exe may not be in the %PATH%. If not 
 You'll want to add VirtualBox's directory (usually something like C:\Program Files\Oracle\VirtualBox) 
 into the PATH.
 
 ##### Router Node 
 <pre>
  $ git clone https://github.com/corefile/router-node.git router-node
- 
  $ cd router-node
- 
  $ vagrant up
 </pre>
 
@@ -36,14 +34,29 @@ into the PATH.
  $ git clone https://github.com/corefile/allin1-kilo
  $ cd allin1-kilo
  $ vagrant up
- $ vagrant ssh
 </pre>
+
+This is a good time to take a snapshot of your OpenStack Node so you can return to a known working state
+
+<pre>
+ $ vagrant sandbox on
+</pre>
+
+If you mess somethign up and want to get back to the orginal box state just run "vagrant sandbox rollback"
+
 ##### Run Scripts to setup Tenant -- user1, Tenant Networking, and Tenant instances
 <pre>
+ $ vagrant ssh
  $ sudo su -
  # cd /root/ && cp /vagrant/runme1_root.sh && ./runme1_root.sh
  # exit 
  $ cd ~/ && cp /vagrant/{runme2_vagrant.sh,keystone_user1} . && ./runme2_vagrant.sh 
+</pre>
+
+If you are satisfied that your openstack box configured, you can update your snapshot to this point
+
+<pre>
+ $ vagrant sandbox commit
 </pre>
 
 You can access the Horizon dashboard (slow the first time you access it) at:
