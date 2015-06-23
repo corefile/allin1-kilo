@@ -42,7 +42,7 @@ This is a good time to take a snapshot of your OpenStack Node so you can return 
  $ vagrant sandbox on
 </pre>
 
-If you mess something up and want to get back to the orginal box state just run "vagrant sandbox rollback"
+If you mess something up and want to get back to the original box state just run "vagrant sandbox rollback"
 
 ##### Run Scripts to setup Tenant -- user1, Tenant Networking, and Tenant instances
 <pre>
@@ -53,7 +53,7 @@ If you mess something up and want to get back to the orginal box state just run 
  $ cd ~/ && cp /vagrant/{runme2_vagrant.sh,keystone_user1} . && ./runme2_vagrant.sh 
 </pre>
 
-If you are satisfied that your openstack box configured, you can update your snapshot to this point
+If you are satisfied that your openstack box is configured properly, you can update your snapshot to this point
 
 <pre>
  $ vagrant sandbox commit
