@@ -31,7 +31,7 @@ into the PATH.
 
 ##### Kilo OpenStack Node
 <pre>
- $ git clone https://github.com/corefile/allin1-kilo
+ $ git clone https://github.com/corefile/allin1-kilo allin1-kilo
  $ cd allin1-kilo
  $ vagrant up
 </pre>
