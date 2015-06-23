@@ -53,8 +53,7 @@ If you mess something up and want to get back to the original box state just run
  $ cd ~/ && cp /vagrant/{runme2_vagrant.sh,keystone_user1} . && ./runme2_vagrant.sh 
 </pre>
 
-NOTE: when the script runs (runme2_vagrant.sh), when the instances are created, the percentage will be at 0% for
-a bit(depending on laptop horsepower), don't panic it will eventially finish. 
+NOTE: when you run the script(runme2_vagrant.sh) and it gets to the section that creates the instances, the progress percentage will be at 0% for a bit(depending on laptop horsepower), don't panic it will eventually finish. 
 
 You can access the Horizon dashboard (slow the first time you access it) at:
 <pre>
