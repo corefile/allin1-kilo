@@ -42,7 +42,7 @@ This is a good time to take a snapshot of your OpenStack Node so you can return 
  $ vagrant sandbox on
 </pre>
 
-If you mess somethign up and want to get back to the orginal box state just run "vagrant sandbox rollback"
+If you mess something up and want to get back to the orginal box state just run "vagrant sandbox rollback"
 
 ##### Run Scripts to setup Tenant -- user1, Tenant Networking, and Tenant instances
 <pre>
