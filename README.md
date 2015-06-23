@@ -56,11 +56,11 @@ If you mess something up and want to get back to the original box state just run
  $ cd ~/ && cp /vagrant/{runme2_vagrant.sh,keystonerc_user1} . && ./runme2_vagrant.sh 
 </pre>
 
-At this point you should have the folling topology:
+NOTE: when you run the script(runme2_vagrant.sh) and it gets to the section that creates the instances, the progress percentage will be at 0% for a bit(depending on laptop horsepower), don't panic it will eventually finish. 
+
+At this point you should have the following topology:
 
 ![Example topology](https://github.com/corefile/allin1-kilo/blob/master/images/topology.png)
-
-NOTE: when you run the script(runme2_vagrant.sh) and it gets to the section that creates the instances, the progress percentage will be at 0% for a bit(depending on laptop horsepower), don't panic it will eventually finish. 
 
 You can access the Horizon dashboard (slow the first time you access it) at:
 <pre>
