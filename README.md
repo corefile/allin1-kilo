@@ -63,6 +63,7 @@ You can access the Horizon dashboard (slow the first time you access it) at:
 http://192.168.50.21/dashboard/
 </pre>
 login: user1
+
 pass: user1 
 
 If you are satisfied that your openstack box is configured properly, you can update your snapshot to this point
