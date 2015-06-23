@@ -53,15 +53,14 @@ If you mess something up and want to get back to the original box state just run
  $ cd ~/ && cp /vagrant/{runme2_vagrant.sh,keystone_user1} . && ./runme2_vagrant.sh 
 </pre>
 
-If you are satisfied that your openstack box is configured properly, you can update your snapshot to this point
-
-<pre>
- $ vagrant sandbox commit
-</pre>
-
 You can access the Horizon dashboard (slow the first time you access it) at:
 <pre>
 http://192.168.50.21/dashboard/
 </pre>
 login: user1
 pass: user1 
+
+If you are satisfied that your openstack box is configured properly, you can update your snapshot to this point
+<pre>
+ $ vagrant sandbox commit
+</pre>
