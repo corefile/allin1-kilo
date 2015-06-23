@@ -22,10 +22,10 @@ neutron  subnet-create --gateway=3.0.0.254 --name=subintTwo intTwo 3.0.0.0/24 --
 neutron	 router-interface-add rtr1 subintTwo
 
 # Tenant vm in subnet[One]
-nova boot --polling --flavor m1.nano --image $(nova image-list | grep 'cirros\s' | awk '{print $2}') --nic net-id=$(neutron net-list | grep -w int | awk '{print $2}') --security-groups sec1 --key-name demo_key vm1
+nova boot --poll --flavor m1.nano --image $(nova image-list | grep 'cirros\s' | awk '{print $2}') --nic net-id=$(neutron net-list | grep -w int | awk '{print $2}') --security-groups sec1 --key-name demo_key vm1
 
 # Tenant vm in subnetTwo
-nova boot --polling --flavor m1.nano --image $(nova image-list | grep 'cirros\s' | awk '{print $2}') --nic net-id=$(neutron net-list | grep -w intTwo | awk '{print $2}') --security-groups sec1 --key-name demo_key vm2
+nova boot --poll --flavor m1.nano --image $(nova image-list | grep 'cirros\s' | awk '{print $2}') --nic net-id=$(neutron net-list | grep -w intTwo | awk '{print $2}') --security-groups sec1 --key-name demo_key vm2
 
 
 # Assign floating ips to all tenant vms
