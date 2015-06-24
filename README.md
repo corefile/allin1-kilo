@@ -24,13 +24,6 @@ Note for Windows users: In Windows, VBoxManage.exe may not be in the %PATH%. If 
 You'll want to add VirtualBox's directory (usually something like C:\Program Files\Oracle\VirtualBox) 
 into the PATH.
 
-##### Router Node (new router box that should work on windows)
-<pre>
- $ git clone https://github.com/corefile/router.git router
- $ cd router
- $ vagrant up
-</pre>
-
 
 ##### Kilo OpenStack Node
 <pre>
