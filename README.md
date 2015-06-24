@@ -48,7 +48,13 @@ If you mess something up and want to get back to the original box state just run
  $ sudo su -
  # ./runme1_root.sh
  # exit 
- $ cd ~/ && cp /vagrant/{runme2_vagrant.sh,keystonerc_user1} . && ./runme2_vagrant.sh 
+ 
+ Should be the vagrant user now
+ 
+ $ cd ~/ 
+ $ cp /vagrant/runme2_vagrant.sh .
+ $ cp /vagrant/keystonerc_user1 .
+ $ ./runme2_vagrant.sh
 </pre>
 
 NOTE: when you run the script(runme2_vagrant.sh) and it gets to the section that creates the instances, the progress percentage will be at 0% for a bit(depending on laptop horsepower), don't panic it will eventually finish. 
