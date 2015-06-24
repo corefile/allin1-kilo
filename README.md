@@ -20,10 +20,6 @@ This lab requires two virtual boxes, a vbox acting as a router and the openstack
 The Vagrant Sahara plugin provides the ability to take a snapshot of machine, allowing you to restore it, for a quick
 return to a known state. 
 
-Note for Windows users: In Windows, VBoxManage.exe may not be in the %PATH%. If not 
-You'll want to add VirtualBox's directory (usually something like C:\Program Files\Oracle\VirtualBox) 
-into the PATH.
-
 ##### Router Node (new router box that should work on windows)
 <pre>
  $ git clone https://github.com/corefile/router.git router
